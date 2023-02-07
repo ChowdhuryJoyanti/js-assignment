@@ -83,7 +83,9 @@ function gemsToDiamond(firstFriend ,secondFriend, thirdFriend){
             let thirdFriendDiamond = thirdFriend * 43;
             let allFriendDiamond = firstFriendDiamond + secondFriendDiamond + thirdFriendDiamond;
 
-            if(allFriendDiamond >2000 ){
+
+            
+            if( allFriendDiamond >2000 ){
                 return allFriendDiamond - 2000;
             }
        
@@ -96,8 +98,8 @@ function gemsToDiamond(firstFriend ,secondFriend, thirdFriend){
       
 }
 
-//  let result = gemsToDiamond(10, 0, 50)
-//  console.log(result)
+ let result = gemsToDiamond(10, 0, 50)
+ console.log(result)
 
 
 
