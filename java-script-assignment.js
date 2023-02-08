@@ -14,8 +14,7 @@ function mindGame (number1){
         let result = substraction;
         return result;
  }
-//  let substractionResult = mindGame(33)
-//  console.log(substractionResult)
+
 
 
 
@@ -39,10 +38,7 @@ function evenOdd(Name){
     }
     
        }
-    
-    //   let myResult = evenOdd(6);
-    //   console.log(myResult);
-
+   
 
 // // Descrption :In this function I took a parameter number then substract 7.then I give a condition that 
 // if the substraction result is less than 7 than return the substraction
@@ -51,6 +47,9 @@ function evenOdd(Name){
 
 
 function isLGSeven(number){
+    if(typeof number !=="number"){
+        return "please enter a number";
+    }
         let substractionResult = number - 7;
          if(substractionResult >7){
             let name = number*2
@@ -61,14 +60,10 @@ function isLGSeven(number){
   }
 }
 
-//    let result = isLGSeven(-15);
-//    console.log(result);
-
 
 // // Description :in this function i take some good and bad data as a parameter of an array .then go through
 // for loop and send the bad data to the badData array and return badData length
 function  findingBadData(numbers){
-   
     let badData = [];
      for( let i =0; i < numbers.length; i++){
          let index = i;
@@ -81,11 +76,6 @@ function  findingBadData(numbers){
      return badData.length;
  
   }
-        //  const myNumbers = [-6,-7,7,];
-        //  const badData = findingBadData(myNumbers)
-        //  console.log(badData)
-
-
 
      // Description : In this function I did multiplication the three friends gems and the power of diamond
 // than added the multiplication result.Than I declare a function if the added number is greater than
@@ -105,5 +95,5 @@ function gemsToDiamond(firstFriend ,secondFriend, thirdFriend){
         return allFriendDiamond;
     } 
 }
-//  let result = gemsToDiamond(100, 5, 1)
-//  console.log(result)
+
+

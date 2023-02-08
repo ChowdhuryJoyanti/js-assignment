@@ -15,7 +15,7 @@ function mindGame (number1){
         return result;
 }
 
-//  let substractionResult = mindGame("60")
+//  let substractionResult = mindGame()
 //  console.log(substractionResult)
 
 
@@ -51,10 +51,8 @@ if(typeof Name !== "string"){
 //  result.Otherwise ,It will double of the parameter input
 
   function isLGSeven(number){
-    if(typeof number !== "Number"){
-        return "Please enter a number";
-    }
-        let substractionResult = number - 7;
+  
+    let substractionResult = number - 7;
          if(substractionResult >7){
             let name = number*2
             // console.log(name)
@@ -68,8 +66,8 @@ if(typeof Name !== "string"){
   }
 }
 
-//    let result = isLGSeven(9)
-//    console.log(result)
+   let result = isLGSeven("tr")
+   console.log(result)
 
 
 // Description : In this function I did multiplication the three friends gems and the power of diamond
@@ -77,7 +75,10 @@ if(typeof Name !== "string"){
 // 2000 then substract 2000 .otherwise return the allfriends additon result.
 
 function gemsToDiamond(firstFriend ,secondFriend, thirdFriend){
-   
+        if (typeof firstFriend!="number" || secondFriend !== "number" || thirdFriend !== "number"){
+            return "please provide a valid number"
+        }
+
             let firstFriendDiamond = firstFriend * 21;
             let secondFriendDiamond = secondFriend * 32;
             let thirdFriendDiamond = thirdFriend * 43;
@@ -98,28 +99,97 @@ function gemsToDiamond(firstFriend ,secondFriend, thirdFriend){
       
 }
 
- let result = gemsToDiamond(10, 0, 50)
- console.log(result)
+//  let result = gemsToDiamond(10, 0, 50)
+//  console.log(result)
 
 
 
 // // Description :in this function i take some good and bad data as a parameter of an array .then go through
 // for loop and send the bad data to the badData array and return badData length
- function  findingBadData(numbers){
-   
-   let badData = [];
-    for( let i =0; i < numbers.length; i++){
-        let index = i;
-        let element = numbers[index];
-        if(element < 0 ){
+//  function  findingBadData(numbers){
+    // if(typeof numbers !== "numbers"){
+    //     return "pls provide a number"
+    // }
+  
+//    let badData = [];
+//     for( let i =0; i < numbers.length; i++){
+//         let index = i;
+//         let element = numbers[index];
+//         if(element < 0 ){
            
-        badData.push(element)
-        }
-    }
-    return badData.length;
+//         badData.push(element)
+//         }
+//     }
+//     return badData.length;
 
- }
-        const myNumbers = [-4,-5,-6,-7,7,-3,-8,];
-        const badData = findingBadData(myNumbers)
-        console.log(badData)
+//  }
+//         const myNumbers = [-4,-5,-6,-7,7,-3,-8,];
+//         const badData = findingBadData(myNumbers);
+//         console.log(badData);
 
+
+
+
+       
+// // problems: 4
+// function findingBadData(t){
+//     var positiveArr = [];
+//     var negativeArr = [];
+    
+//     t.forEach(function(item) {
+//       if (item < 0) {
+//         negativeArr.push(item);
+//       } else {
+//         positiveArr.push(item)
+//       }
+//     });
+//     return (negativeArr.length )
+    
+//    }
+
+
+// console.log(findingBadData([-1, -2, -3, 5, 6, 1,-3]))
+// // problems: 4
+// function findingBadData(t){
+//     var positiveArr = [];
+//     var negativeArr = [];
+    
+//     t.forEach(function(item) {
+//       if (item < 0) {
+//         negativeArr.push(item);
+//       } else {
+//         positiveArr.push(item)
+//       }
+//     });
+//     return (negativeArr.length )
+    
+//    }
+
+
+// console.log(findingBadData([-1, -2, -3, 5, 6, 1,-3]))
+
+
+
+
+// problems: 3
+
+// function isLGSeven(number){
+  
+//     if(typeof number !== 'number'){
+//         return "please enter a valid string";
+//     }
+   
+//     const restNumber = number - 7 ; 
+//     if(restNumber > 7 ){
+//        const num = restNumber * 2 ; 
+//        return num
+//     }
+//     else{
+//        return number ; 
+//     }
+
+// }
+// // let myNumbers = isLGSeven("tr")
+
+// console.log(result)
+// console.log(isLGSeven('17'))
